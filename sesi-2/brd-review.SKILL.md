@@ -5,6 +5,7 @@ description: "Bandingkan BRD dengan product concept dan notulen; laporkan gap be
 
 
 # BRD Review
+Baca references/brd-structure.md untuk konvensi dan struktur BRD.
 Input: BRD beserta versi, Product Concept, notulen, template/Reference BRD untuk struktur.
 1. Baca semua sumber. Buat matriks fulfilled/missing/ambiguous/conflict/incomplete.
 2. Tiap gap wajib menyebut bagian, RM-ID, kutipan singkat BRD dan sumber pembanding yang benar-benar ditemukan.

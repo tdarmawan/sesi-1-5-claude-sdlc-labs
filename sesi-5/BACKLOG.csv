@@ -1,0 +1,9 @@
+Story ID,User Story,Acceptance Criteria,Requirement ID,Priority,Size,Dependency,Status,Sprint
+S-01,"Sebagai super admin, saya ingin melihat daftar role, supaya dapat memeriksa akses.",Kolom ID/nama/total user/status tampil; Staff dan Auditor sesuai fixture,RM-001,Must,S,tidak ada,Done,1
+S-02,"Sebagai super admin, saya ingin membuka form role, supaya dapat mengisi role baru.",Create membuka form; Batal kembali tanpa perubahan,RM-001; RM-004,Must,S,S-01,Done,1
+S-03,"Sebagai super admin, saya ingin menyimpan role, supaya role baru tersedia.",ID dibuat sistem; role baru muncul di daftar,RM-004,Must,M,S-02,In Progress,1
+S-04,"Sebagai super admin, saya ingin nama role unik, supaya akses tidak ambigu.",Duplikat Active ditolak; duplikat Inactive ditolak,RM-004,Must,S,S-03,In Progress,1
+S-05,"Sebagai super admin, saya ingin mengatur permission, supaya akses sesuai tugas.",Menu dan submenu tampil; pilihan None/View Only/All Access tersedia,RM-005,Must,M,S-02,Blocked,1
+S-06,"Sebagai auditor, saya ingin akses View Only, supaya dapat melihat tanpa mengubah.",Daftar dapat dilihat; Create/Edit tidak ditampilkan,RM-005,Should,S,S-01; S-05,Backlog,2
+S-07,"Sebagai super admin, saya ingin melihat anggota role, supaya mengetahui penggunanya.",Nama/email dummy tampil; role tanpa user menampilkan state kosong,RM-002,Could,S,S-01,Backlog,2
+S-08,"Sebagai super admin, saya ingin mengubah role, supaya akses tetap sesuai.",ID tidak berubah; nama/permission/status dapat diperbarui,RM-007,Could,M,S-03; S-05,Backlog,2

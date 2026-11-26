@@ -1,0 +1,62 @@
+{
+  "asOf": "2026-11-26",
+  "note": "Tanggal data contoh, ganti dengan tanggal latihan bila disalin ke Notion.",
+  "stories": [
+    {
+      "id": "S-01",
+      "status": "Done",
+      "dependency": "tidak ada",
+      "requirement": "RM-001"
+    },
+    {
+      "id": "S-02",
+      "status": "Done",
+      "dependency": "S-01",
+      "requirement": "RM-001; RM-004"
+    },
+    {
+      "id": "S-03",
+      "status": "In Progress",
+      "dependency": "S-02",
+      "requirement": "RM-004"
+    },
+    {
+      "id": "S-04",
+      "status": "In Progress",
+      "dependency": "S-03",
+      "requirement": "RM-004"
+    },
+    {
+      "id": "S-05",
+      "status": "Blocked",
+      "dependency": "S-02",
+      "requirement": "RM-005"
+    },
+    {
+      "id": "S-06",
+      "status": "Backlog",
+      "dependency": "S-01; S-05",
+      "requirement": "RM-005"
+    },
+    {
+      "id": "S-07",
+      "status": "Backlog",
+      "dependency": "S-01",
+      "requirement": "RM-002"
+    },
+    {
+      "id": "S-08",
+      "status": "Backlog",
+      "dependency": "S-03; S-05",
+      "requirement": "RM-007"
+    }
+  ],
+  "blockers": [
+    {
+      "story": "S-05",
+      "reason": "Default permission produk masih TBC",
+      "owner": "Product Owner",
+      "action": "Konfirmasi default permission sebelum keputusan implementasi produk"
+    }
+  ]
+}

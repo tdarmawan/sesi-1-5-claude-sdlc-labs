@@ -1,0 +1,8 @@
+Requirement ID,Screen,Element,Prototype scope,Open issue
+RM-001,Daftar Role,Tabel dan Create,wajib,
+RM-002,Role Members,Nama dan email dummy,opsional kode,
+RM-003,Change Log Role,Riwayat per role,opsional kode,UI-04
+RM-004,Create New Role,ID nama status,wajib,UI-01; UI-02; UI-03; UI-05
+RM-005,Create New Role,Permission dan visibility,wajib,UI-03
+RM-006,Di luar prototype,Session dan login,tidak diimplementasi,
+RM-007,Edit Role,Perubahan role,opsional kode,

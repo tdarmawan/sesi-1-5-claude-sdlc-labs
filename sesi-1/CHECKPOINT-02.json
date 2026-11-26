@@ -1,0 +1,46 @@
+[
+  {
+    "storyId": "US-01",
+    "userStory": "Sebagai pengguna, saya ingin meminta reset lewat email, supaya memperoleh petunjuk pemulihan.",
+    "criteria": [
+      "Given email tidak berformat valid When pengguna mengirim form Then sistem menampilkan error format sebelum memproses permintaan.",
+      "Given email berformat valid When permintaan dikirim Then respons generik tidak mengungkap keberadaan akun."
+    ],
+    "source": [
+      "BRD.md#RP-001",
+      "BRD.md#RP-002"
+    ],
+    "gap": [
+      "GAP-02: pembatasan frekuensi permintaan belum diputuskan."
+    ],
+    "reviewStatus": "Needs Clarification"
+  },
+  {
+    "storyId": "US-02",
+    "userStory": "Sebagai pengguna, saya ingin token yang aman, supaya tautan lama tidak dapat dipakai ulang.",
+    "criteria": [
+      "Given token berumur 30 menit atau lebih When token digunakan Then sistem menolak token.",
+      "Given token sudah digunakan When token dikirim lagi Then sistem menolak token."
+    ],
+    "source": [
+      "BRD.md#RP-003"
+    ],
+    "gap": [],
+    "reviewStatus": "Ready for Review"
+  },
+  {
+    "storyId": "US-03",
+    "userStory": "Sebagai pengguna, saya ingin menyimpan password baru, supaya dapat memulihkan akses.",
+    "criteria": [
+      "Given token valid dan belum dipakai When password baru disimpan Then token ditandai telah digunakan."
+    ],
+    "source": [
+      "BRD.md#RP-004"
+    ],
+    "gap": [
+      "GAP-01: aturan kompleksitas password TBC.",
+      "GAP-03: invalidasi session lama TBC."
+    ],
+    "reviewStatus": "Needs Clarification"
+  }
+]
